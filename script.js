@@ -41,7 +41,7 @@ function timeBlock() {
         htmlTemplate = `
         <div class="row">
         <div class="hour">${formatHour}</div>
-        <textarea class="${pastPresentFuture}"></textarea>
+        <textarea class="${pastPresentFuture}">Store Me</textarea>
         <button class="saveBtn" data-hour="${hour}">Save</button>
         </div>
         `;
@@ -56,7 +56,7 @@ timeBlock();
 containerEl.on("click", "button", function(event) {
     event.preventDefault();
 
-    var hourText = $(this).pre().val();
+    var hourText = $(this).prev().val();
     var hourKey = $(this).attr("data-hour");
     localStorage.setItem(hourText, hourKey);
 });
