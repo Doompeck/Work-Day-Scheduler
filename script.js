@@ -9,7 +9,7 @@ var currentHour = moment().format("HH");
 
 // time range array (workin' 9 to 5)
 // add more hour values into the array to increase the hours in the day to be assigned
-var dayTimeArray = [9, 10, 11, 12, 1, 2, 3, 4, 5];
+var dayTimeArray = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 
 // main function body.  This includes the for loop that runs through the array and builds and appends the html template for each hour.
 function timeBlock() {
