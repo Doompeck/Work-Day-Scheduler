@@ -22,7 +22,8 @@ To use this daily scheduler you simply need to open the index.html in your brows
 ![image](https://user-images.githubusercontent.com/104403183/204716428-4c82ec92-8075-46f4-be45-de1a52d2c7ff.png)
 
 Once this is done you can enter text in any one of the hourly text fields.  
-![Demo-Scheduler](https://user-images.githubusercontent.com/104403183/204717116-f6383899-fb12-496f-b407-c4c405ad3a15.gif)
+![Work-Scheduler](https://user-images.githubusercontent.com/104403183/204717734-4e72ec2b-2186-42fb-8a8c-b02858a1104e.gif)
+
 
 Once you have entered text you can click the save button to store the data to local storage.
 
