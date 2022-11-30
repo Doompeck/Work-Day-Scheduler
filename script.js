@@ -26,7 +26,9 @@ function timeBlock() {
     
     for( i=0; i < dayTimeArray.length; i++) {
         var pastPresentFuture = "";
-        formatHour = moment(dayTimeArray[i], "H");
+        var hour = "hour-" + dayTimeArray[i]; 
+        formatHour = moment(dayTimeArray[i], "H").format("ha");
+        
         // Will need an if statement in here that determines past, present, or future
         if (dayTimeArray[i] < currentHour) {
             pastPresentFuture = "past";
@@ -40,7 +42,7 @@ function timeBlock() {
         <div class="row">
         <div class="hour">${formatHour}</div>
         <textarea class="${pastPresentFuture}"></textarea>
-        <button class="saveBtn">Save</button>
+        <button class="saveBtn" data-hour="${hour}">Save</button>
         </div>
         `;
         containerEl.append(htmlTemplate);
@@ -51,6 +53,10 @@ function timeBlock() {
 timeBlock();
 // Will need an event listener for the container element
 // This will be used to save the data for the clicked time's data into local storage.
-containerEl.addEventListener("click", function(event) {
+containerEl.on("click", "button", function(event) {
     event.preventDefault();
+
+    var hourText = $(this).pre().val();
+    var hourKey = $(this).attr("data-hour");
+    localStorage.setItem(hourText, hourKey);
 });
