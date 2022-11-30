@@ -18,7 +18,13 @@ This is a basic daily task scheduler. The main goal of this exercise was to util
 To install you will need to clone down the repository and then open index.html in your browser.
   ## Usage
 
-To use this daily scheduler you simply need to open the index.html in your browser.  Once this is done you can enter text in any one of the hourly text fields.  Once you have entered text you can click the save button to store the data to local storage.
+To use this daily scheduler you simply need to open the index.html in your browser.  
+![image](https://user-images.githubusercontent.com/104403183/204716428-4c82ec92-8075-46f4-be45-de1a52d2c7ff.png)
+
+Once this is done you can enter text in any one of the hourly text fields.  
+![Demo-Scheduler](https://user-images.githubusercontent.com/104403183/204717116-f6383899-fb12-496f-b407-c4c405ad3a15.gif)
+
+Once you have entered text you can click the save button to store the data to local storage.
 
   ## Links
 
