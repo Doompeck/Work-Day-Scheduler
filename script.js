@@ -28,6 +28,10 @@ function timeBlock() {
       pastPresentFuture = "future";
     }
 
+    if (storedValue === null) {
+        storedValue = "";
+    }
+
     htmlTemplate = `
         <div class="row">
         <div class="hour">${formatHour}</div>
