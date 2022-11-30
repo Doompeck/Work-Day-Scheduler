@@ -33,10 +33,10 @@ function timeBlock() {
     }
 
     htmlTemplate = `
-        <div class="row">
-        <div class="hour">${formatHour}</div>
-        <textarea class="${pastPresentFuture}">${storedValue}</textarea>
-        <button class="saveBtn" data-hour="${hour}">Save</button>
+        <div class="row time-block">
+        <div class="hour col-1">${formatHour}</div>
+        <textarea class="col-10 ${pastPresentFuture}">${storedValue}</textarea>
+        <button class="col-1 saveBtn" data-hour="${hour}">Save</button>
         </div>
         `;
     containerEl.append(htmlTemplate);
