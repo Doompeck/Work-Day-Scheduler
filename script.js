@@ -25,20 +25,21 @@ var dayTimeArray = [
 function timeBlock() {
     
     for( i=0; i < dayTimeArray.length; i++) {
-        
+        var pastPresentFuture = "";
+        formatHour = moment(dayTimeArray[i], "H");
         // Will need an if statement in here that determines past, present, or future
         if (dayTimeArray[i] < currentHour) {
-            
+            pastPresentFuture = "past";
         } else if (dayTimeArray[i] == currentHour) {
-
+            pastPresentFuture = "present";
         } else {
-
+            pastPresentFuture = "future";
         };
         
         htmlTemplate = `
         <div class="row">
-        <div class="hour">${dayTimeArray[i]}</div>
-        <textarea class=""></textarea>
+        <div class="hour">${formatHour}</div>
+        <textarea class="${pastPresentFuture}"></textarea>
         <button class="saveBtn">Save</button>
         </div>
         `;
