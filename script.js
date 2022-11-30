@@ -29,15 +29,17 @@ function timeBlock() {
         
         htmlTemplate = `
         <div class="row">
-        <div class="hour"></div>
+        <div class="hour">${dayTimeArray[i]}</div>
         <textarea class=""></textarea>
         <button class="saveBtn">Save</button>
         </div>
-        `
-
+        `;
+        containerEl.append(htmlTemplate);
     };
 
 };
+
+timeBlock();
 // Will need an event listener for the container element
 // This will be used to save the data for the clicked time's data into local storage.
 containerEl.addEventListener("click", function(event) {
