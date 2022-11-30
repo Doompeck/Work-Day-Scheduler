@@ -22,10 +22,18 @@ var dayTimeArray = [
 
 // For loop to render a block element for each hour of the day.
 // This will include our template html that describes said block
-// Will need an if statement in here that determines past, present, or future
 function timeBlock() {
-
+    
     for( i=0; i < dayTimeArray.length; i++) {
+        
+        // Will need an if statement in here that determines past, present, or future
+        if (dayTimeArray[i] < currentHour) {
+            
+        } else if (dayTimeArray[i] == currentHour) {
+
+        } else {
+
+        };
         
         htmlTemplate = `
         <div class="row">
